@@ -5,6 +5,7 @@
  */
 package group6cardgame;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class Group6CardGame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //-Setup-
         //2 players
@@ -104,6 +105,11 @@ public class Group6CardGame {
             } else if (p2.getPoints() >= 26) {
                 System.out.println("Player 2 WINS THE GAME!!!\n");
                 gameOver = true;
+            }
+            
+            if (gameOver == false) {
+                System.out.println("Press any key to continue");
+                System.in.read();
             }
 
         } while (gameOver == false);
