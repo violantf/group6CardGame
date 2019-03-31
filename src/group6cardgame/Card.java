@@ -12,7 +12,7 @@ package group6cardgame;
 public class Card {
     
         public enum Suit {SPADES, HEARTS, CLUBS, DIAMONDS};
-        public enum Value {ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
+        public enum Value {TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
         private final Suit suit;
         private final Value value;
         
