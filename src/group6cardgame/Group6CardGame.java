@@ -102,7 +102,7 @@ public class Group6CardGame {
                 System.out.println("Player 1 WINS THE GAME!!!\n");
                 gameOver = true;
             } else if (p2.getPoints() >= 26) {
-                System.out.println("Player 1 WINS THE GAME!!!\n");
+                System.out.println("Player 2 WINS THE GAME!!!\n");
                 gameOver = true;
             }
 
