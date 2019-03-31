@@ -43,6 +43,7 @@ public class Player{
     }
     
     public void WarDiscard() { // discards 3 cards
+        
         for(int i = 0; i < 3; i++){
             hand.remove(hand.size() - 1);
         }
