@@ -11,11 +11,14 @@ import java.util.*;
  *
  * @author owner
  */
+
+// initialize new deck to 52 cards
 public class Deck {
     private final int deckSize = 52;
     public Card[] cards = new Card[deckSize];
     ArrayList<Card> deck;
     
+    // initialize all values and enums for cards inside deck
     public Deck() {
         int countCards = 0;
         for(Card.Suit s: Card.Suit.values()){
@@ -31,6 +34,7 @@ public class Deck {
         
     }
     
+    // assign 1/2 deck to one player and the other half to second player
     public List<Card> dealPlayerOne(){
         return deck.subList(0, 25);
     }

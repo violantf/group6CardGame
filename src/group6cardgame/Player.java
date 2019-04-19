@@ -29,7 +29,7 @@ public class Player{
     }
     
     public void warWin() {
-        points += 8; //can only win 2s each turn
+        points += 8; //can only win 8s each turn
     }
     
     public int getHandSize() {
